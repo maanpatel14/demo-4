@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    background-image: url(../img/images+.jpg)
+}
+  /* .main-text{
+            position: relative;
+
+        }
+        .main-text::before{
+            content: "";
+            color: white;
+            animation: word 5s infinite;
+        }
+        .main-text::after{
+            content: "";
+            background-color: wheat;
+            position: absolute;
+            width: calc(100% + 5px);
+            height: 100%;
+            border-left: 1px solid white;
+            right: -5px;
+            animation: cursor 0.6s, typing 5s steps(6) infinite;         
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid white;
+            }
+        }
+        @keyframes word{
+            0%,50%{
+                content: "Clickz";
+            }
+            80%{
+                content: "Clickz";
+            }
+            100%{}
+        }
+        @keyframes typing{
+            10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+                width: 0;
+            }
+            5%,20%,25%,40%,45%,60%,65%,80%,85%{
+                width: calc(100% + 5px);
+            }
+        } */
+li {
+    list-style-type: none;
+}
+
+.backgrund img {
+    height: 100vh;
+    width: 100%;
+}
+
+.hrd {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.remove img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    margin-top: 43px;
+}
+
+.menu ul li {
+    color: snow;
+    transition: all 0.6s ease;
+}
+
+.menu ul li:hover {
+    color: skyblue;
+    border-bottom: 1px solid white;
+}
+
+.wrapper {
+    margin-top: 43px;
+}
+
+.wrapper a {
+    display: block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid skyblue;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all .35s;
+}
+
+a:before,
+a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: skyblue;
+    z-index: -1;
+    transition: all .35s;
+}
+
+a:before {
+    opacity: .5;
+}
+
+a:after {
+    transition-delay: .2s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:hover:before,
+a:hover:after {
+    top: 0;
+}
+
+.border {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.066);
+}
+
+.wrapper-new a {
+    display: block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all .35s;
+}
+
+.wrapper-new a:before,
+.wrapper-new a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.wrapper-new a:before {
+    opacity: .5;
+}
+
+.wrapper-new a:after {
+    transition-delay: .2s;
+}
+
+.wrapper-new a:hover {
+    color: black;
+}
+
+.wrapper-new a:hover:before,
+.wrapper-new a:hover:after {
+    top: 0;
+}
+
+.button .wrapper-new {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.innvative {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-evenly;
+}
+
+.class-image {
+    overflow: hidden;
+    border-radius: 50px;
+    border: 10px solid white;
+    border-style: ridge double;
+}
+
+.class-image img {
+    height: 400px;
+    width: 600px;
+    transition: 0.6s;
+}
+
+.class-image img:hover {
+    transform: scale(1.05);
+}
+
+.desing {
+    font-family: arial;
+    width: 40%;
+    margin-top: 35px;
+}
+
+.desing h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.desing h3 {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    padding-top: 10px;
+}
+
+.desing p {
+    color: white;
+    padding-top: 20px;
+    text-align: justify;
+}
+.icon{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.21);
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.icon div i{
+    border: 1px solid  rgba(255, 255, 255, 0.21);
+    padding:7px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+.icon div i:hover{
+    border: 1px solid  white;
+    color: white;
+}
